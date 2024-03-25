@@ -1,0 +1,12 @@
+<div [@routerTransition]>
+    <div class="content d-flex flex-column flex-column-fluid">
+        <div role="actions">
+            <button class="btn btn-primary" (click)="createDocument()">
+                <i class="fa fa-plus"></i>
+                {{ 'Thêm văn bản pháp lý' | localize }}
+            </button>
+        </div>
+    </div>
+    <app-create-document #createDocumentModal></app-create-document>
+
+</div>
